@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Workout App Homepage
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,14 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Workout App</ion-title>
     </ion-toolbar>
+    <img src="https://i.guim.co.uk/img/media/75e8e0c0050256d79e7748136eedd0d26d09b503/0_0_4552_2732/master/4552.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=7600a4bff0795e3a040b90c9126ed3e4">
   </ion-header>
+  <ul style="font-size: 16px;">
+    <li [routerLink]="['/last-workout']" routerDirection = "forward" style="text-align: center; color:rgb(30, 101, 255);">Click here to input last workout type</li>
+    <li [routerLink]="['/calender']" routerDirection = "forward" style="text-align: center; color:rgba(10, 90, 2, 0.568);">Click here to access calender</li>
+    <li [routerLink]="['/facebook-login']" routerDirection = "forward" style="text-align: center; color:rgb(223, 10, 10);">Click here to Log in using Facebook</li>
+</ul>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>

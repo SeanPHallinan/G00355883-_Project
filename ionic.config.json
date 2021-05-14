@@ -1,5 +1,7 @@
 {
   "name": "G00355883-Project",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'last-workout',
+    loadChildren: () => import('./last-workout/last-workout.module').then( m => m.LastWorkoutPageModule)
+  },
+  {
+    path: 'calender',
+    loadChildren: () => import('./calender/calender.module').then( m => m.CalenderPageModule)
+  },
+  {
+    path: 'facebook-login',
+    loadChildren: () => import('./facebook-login/facebook-login.module').then( m => m.FacebookLoginPageModule)
+  },
+  {
+    path: 'cal-details',
+    loadChildren: () => import('./cal-details/cal-details.module').then( m => m.CalDetailsPageModule)
+  },
 ];
 
 @NgModule({
